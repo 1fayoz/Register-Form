@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="container center">
+        <form  action="#" method="post" >
+            {% csrf_token %}
+            <h1>Register</h1>
+        <div class="form">
+            <label for="name">Ism Familya</label>
+            <input type="text" id="name" name="ism_falmilya" placeholder="Ism Familya" required>
+        </div>
+        <div class="form">
+            <label for="age">Yosh</label>
+            <input type="number" id="age" name="yosh" placeholder="Yosh" required>
+        </div>
+        <div class="form">
+            <label for="phone">Telfon Nomer</label>
+            <input type="tel" id="phone" name="telfon_nomer" placeholder="Telfon Nomer" required>
+        </div>
+        <div class="form">
+            <label for="male">Erkak</label>
+            <input type="radio" id="male" name="radio" value="Erkak" >
+            <span></span>
+        </div>
+        <div class="form">
+            <label for="female">Ayol</label>
+            <input type="radio" id="female" name="radio" value="Ayol">
+        </div>
+        <div class="form">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form">
+            <button type="submit">Yuborish</button>
+        </div>
+     </form>
+    </div>
+    
+    
+
+</body>
+</html>
